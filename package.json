@@ -1,0 +1,57 @@
+{
+  "name": "demo-loopback-3",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "start": "node .",
+    "cm": "git-cz"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "helmet": "^3.10.0",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-connector-mysql": "^5.3.1",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-conventional": "^7.5.0",
+    "commitizen": "^3.0.7",
+    "eslint": "^5.15.3",
+    "eslint-config-loopback": "^8.0.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "husky": "^1.3.1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "demo-loopback-3",
+  "lint-staged": {
+    "linters": {
+      "**/*.{js}": [
+        "npm run lint",
+        "git add"
+      ]
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
