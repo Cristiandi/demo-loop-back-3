@@ -1,12 +1,6 @@
 {
   "db": {
-    "host": "localhost",
-    "port": 3306,
-    "url": "",
-    "database": "demo-loopback-three",
-    "password": "t00r",
     "name": "db",
-    "user": "root",
-    "connector": "mysql"
+    "connector": "postgresql"
   }
 }
