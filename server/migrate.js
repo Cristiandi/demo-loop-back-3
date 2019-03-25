@@ -27,7 +27,7 @@ const createTables = models => {
   });
 };
 
-const migrate = async () => {
+(async () => {
   try {
     await createTables(models);
   } catch (error) {
@@ -35,8 +35,6 @@ const migrate = async () => {
   }
 
   ds.disconnect();
-};
-
-migrate()
+})()
   .then(() => console.log('MIGRATION DONE!', new Date().toTimeString()))
   .catch(err => console.log('error', err));

@@ -1,5 +1,5 @@
-'use strict';
+const timestamp = require('../../server/mixins/timestamp');
 
-module.exports = Myuser => {
-
+module.exports = MyUser => {
+  timestamp(MyUser, {});
 };
