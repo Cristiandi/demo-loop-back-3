@@ -2,6 +2,11 @@
   "name": "demo-loopback-3",
   "version": "1.0.0",
   "main": "server/server.js",
+  "author": {
+    "name": "Cristian David Ippolito",
+    "email": "cristiandavidippolito@gmail.com",
+    "url": "https://github.com/Cristiandi"
+  },
   "engines": {
     "node": ">=10.13.0",
     "npm": ">=6.4.1"
@@ -45,7 +50,7 @@
   },
   "repository": {
     "type": "",
-    "url": ""
+    "url": "https://github.com/Cristiandi/demo-loopback-3"
   },
   "license": "UNLICENSED",
   "description": "demo-loopback-3",
