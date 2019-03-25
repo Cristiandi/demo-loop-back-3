@@ -42,14 +42,6 @@
   },
   "license": "UNLICENSED",
   "description": "demo-loopback-3",
-  "lint-staged": {
-    "linters": {
-      "**/*.{js}": [
-        "npm run lint",
-        "git add"
-      ]
-    }
-  },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
@@ -59,14 +51,14 @@
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
       "pre-commit": "lint-staged"
-    },
-    "lint-staged": {
-      "linters": {
-        "**/*.{js}": [
-          "npm run lint",
-          "git add"
-        ]
-      }
+    }
+  },
+  "lint-staged": {
+    "linters": {
+      "**/*.{js}": [
+        "npm run lint",
+        "git add"
+      ]
     }
   }
 }
