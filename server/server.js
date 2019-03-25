@@ -5,7 +5,7 @@ const app = module.exports = loopback();
 
 app.start = () => {
   // start the web server
-  return app.listen(function () {
+  return app.listen(() => {
     app.emit('started');
     let baseUrl = app.get('url').replace(/\/$/, '');
     // eslint-disable-next-line no-console
