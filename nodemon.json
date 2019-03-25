@@ -1,0 +1,9 @@
+{
+  "verbose": false,
+  "ignore": ["node_modules"],
+  "execMap": {
+    "js": "node"
+  },
+  "ext": ".js,.json,.graphql",
+  "watch": "./"
+}
