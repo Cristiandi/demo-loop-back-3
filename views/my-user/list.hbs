@@ -1,0 +1,20 @@
+    <div class="row">
+        <a href="/views/my-user/create" class="btn btn-primary">New</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Full name</th>
+                    <th>Email</th>
+                    <th colspan="2">Operation</th>
+                </tr>
+            </thead>
+            {{#each users}}
+                <tr>
+                    <td>{{ this.fullName }}</td>
+                    <td>{{ this.email }}</td>
+                    <td><a href="/views/my-user/update/{{this.id}}">Update</a></td>
+                    <td><a href="/views/my-user/delete/{{this.id}}">Delete</a></td>
+                </tr>
+            {{/each}}
+        </table>
+    </div>
